@@ -218,9 +218,18 @@ body {
   width: 154px;
   height: 40px;
   border-radius: 20px;
-  margin-left: 400px;
   cursor: pointer;
+  margin-right: 35px;
 }
+.left-button-group {
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  width: 50%;
+  right: 8%;
+  top: 4%;
+}
+
 .subscribe-button-text {
   font-family: Mulish;
   font-size: 16px;
@@ -296,9 +305,9 @@ body {
   cursor: pointer;
 }
 .slider-buttons {
-  position: absolute;
+  /* position: absolute;
   right: 8%;
-  top: 4%;
+  top: 4%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -333,6 +342,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .swiper-slide {
     margin-bottom: 40px;
   }
@@ -348,6 +358,7 @@ body {
   .video-thumb-rec {
     height: 300px;
   }
+
   .slider-buttons {
     display: none;
   }

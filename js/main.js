@@ -79,8 +79,20 @@ searchBtn.addEventListener('click', () => {
   mobileSearch.classList.toggle('is-open');
 });
 
-if (document.documentElement.scrollWidth <= 640) {
-  swiper1.destroy();
-  swiper2.destroy();
-  swiper3.destroy();
-};
+window.addEventListener("resize", function() {
+  if (window.innerWidth <= 640) {
+    console.log('Сработало первое условие');
+    swiper1.destroy();
+    swiper2.destroy();
+    swiper3.destroy();
+  }
+  // else
+  // {
+  //   console.log('Сработало второе условие');
+  //   swiper1.init();
+  //   swiper2.init();
+  //   swiper3.init();
+  // }
+});
+
+
